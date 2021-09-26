@@ -1,0 +1,9 @@
+.dispaly {
+  display: block;
+  margin: 10px;
+}
+.auto {
+  display: inline;
+  display: inline-block;
+}
+
