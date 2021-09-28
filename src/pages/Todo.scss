@@ -1,0 +1,84 @@
+.todoItemRoot {
+  background-color: rgb(226, 140, 42);
+}
+
+.textInput {
+  width: 100%;
+  border: 0; 
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.header {
+  width: calc(100% - 48px);
+  min-height: 72px;
+  border: 1px;
+  .header-inner {
+    display: flex;
+    justify-content: center;
+    height: 72px;
+    padding: 0 24px;
+    div {
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+    }
+    .tabbar {
+      width: 100px;
+    }
+    .header-center {
+      .left {
+        .avatar {
+
+        }
+        .title-nav {
+          flex-direction: column;
+          .title {
+            
+          }
+          nav {
+            align-self: flex-start;
+            height: 24px;
+            ul {
+              display: flex;
+              li {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        justify-content: flex-end;
+        button {
+        }
+      }
+
+    }
+    .header-right {
+      width: 300px;
+      .search-area {
+
+      }
+      .user-info {
+        
+      }
+    }
+  }
+
+}
+
+* div {
+  background-color: yellow;
+  border: 1px solid #000;
+  width: 100%;
+}
+.container-inner {
+  display: flex;
+  flex-direction: row;
+}
