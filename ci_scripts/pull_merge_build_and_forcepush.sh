@@ -1,12 +1,12 @@
 set -o xtrace
 
-if [ "${REPO_BRANCH}" == "master" ] || [[ $REPO_BRANCH == dist-* ]]
+if [ "${REPO_BRANCH}" == "main" ] || [[ $REPO_BRANCH == dist-* ]]
 then
   exit
 fi
 if [ "${REPO_BRANCH}" == "develop" ]
 then
-  DIST_PUSH_BRANCH="master"
+  DIST_PUSH_BRANCH="main"
 else
   DIST_PUSH_BRANCH=$'dist-'"$REPO_BRANCH"
 fi
