@@ -6,7 +6,7 @@ import '../styles/Reset.scss';
 
 const App = () => (
   <>
-    <h1> ᵔᴥᵔ 🐶 T O D O S</h1>
+    <h1> ᵔᴥᵔ 🐶 T O D O Sbbbbb</h1>
     <TodoContainer />
   </>
 );
