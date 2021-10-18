@@ -15,6 +15,8 @@ mkdir -p ~/.git && git config user.email "sallysprism@gmail.com" && git config u
 git merge -X theirs --no-edit $REPO_BRANCH
 npm run clean && npm run build
 git add -f dist
+cp dist/index.html .
+git add index.html
 git commit --allow-empty -m $'generated from:'"$COMMIT_HASH"$'\ntriggered by:'"$USERNAME"$'\n[ci skip]'
 git tag -a $'dist_'"$REPO_BRANCH"'_'"$BUILD_NUM" -m "."
 git push --set-upstream origin $DIST_PUSH_BRANCH --force --follow-tags
